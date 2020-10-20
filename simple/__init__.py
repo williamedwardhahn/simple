@@ -134,7 +134,7 @@ def make_plots():
 
 
 
-!pip install -U git+https://github.com/albu/albumentations > /dev/null && echo "All libraries are successfully installed!"
+!pip install -U git+https://github.com/albu/albumentations
 
 from albumentations import (VerticalFlip, HorizontalFlip, Flip, RandomRotate90, Rotate, ShiftScaleRotate, CenterCrop, OpticalDistortion, GridDistortion, ElasticTransform, JpegCompression, HueSaturationValue,
                             RGBShift, RandomBrightness, RandomContrast, Blur, MotionBlur, MedianBlur, GaussNoise, CLAHE, ChannelShuffle, InvertImg, RandomGamma, ToGray, PadIfNeeded 
