@@ -95,8 +95,7 @@ def montage_plot(x):
     
     
    
-def get_batch(mode):
-    b = c.b
+def get_batch(mode,b):
     if mode == "train":
         r = np.random.randint(X.shape[0]-b) 
         x = X[r:r+b,:]
