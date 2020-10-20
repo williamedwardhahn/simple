@@ -97,21 +97,6 @@ def montage_plot(x):
   
 
 
-def gradient_step(w):
-
-    w.data = w.data - c.h*w.grad.data
-    
-    w.grad.data.zero_()
-
-def make_plots():
-    
-    acc_train = acc(model(x,w),y)
-    
-    xt,yt = get_batch('test')
-
-    acc_test = acc(model(xt,w),yt)
-
-    wb.log({"acc_train": acc_train, "acc_test": acc_test})
 
 
 
