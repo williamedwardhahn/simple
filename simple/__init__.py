@@ -94,17 +94,7 @@ def montage_plot(x):
     
     
     
-   
-def get_batch(mode,b):
-    if mode == "train":
-        r = np.random.randint(X.shape[0]-b) 
-        x = X[r:r+b,:]
-        y = Y[r:r+b]
-    elif mode == "test":
-        r = np.random.randint(X_test.shape[0]-b)
-        x = X_test[r:r+b,:]
-        y = Y_test[r:r+b]
-    return x,y
+  
 
 
 def gradient_step(w):
