@@ -107,9 +107,6 @@ def get_batch(mode):
         y = Y_test[r:r+b]
     return x,y
 
-def model(x,w):
-
-    return x@w
 
 def gradient_step(w):
 
